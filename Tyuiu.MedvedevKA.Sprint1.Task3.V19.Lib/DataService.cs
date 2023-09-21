@@ -12,7 +12,7 @@ namespace Tyuiu.MedvedevKA.Sprint1.Task3.V19.Lib
     {
         public bool ElephCanMove(double x1, double x2, double y1, double y2)
         {
-            return (x1 - x2) == (y1 - y2);
+            return Math.Abs(x1 - x2) == Math.Abs(y1 - y2); ;
         }
     }
 }

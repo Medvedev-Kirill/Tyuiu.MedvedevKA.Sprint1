@@ -63,7 +63,15 @@ namespace Tyuiu.MedvedevKA.Sprint1.Task3.V19
             Console.WriteLine("**************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                             *");
             Console.WriteLine("**************************************************************************");
-
+           
+            if (Math.Abs(x1 - x2) == Math.Abs(y1 - y2))
+            {
+                Console.WriteLine("True");
+            }
+            else
+            {
+                Console.WriteLine("False");
+            }
             Console.ReadLine();
         }
     }

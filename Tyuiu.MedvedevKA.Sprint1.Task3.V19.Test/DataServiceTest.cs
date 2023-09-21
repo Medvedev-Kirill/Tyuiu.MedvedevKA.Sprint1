@@ -16,8 +16,9 @@ namespace Tyuiu.MedvedevKA.Sprint1.Task3.V19.Test
             double y1 = 1;
             double x2 = 8;
             double y2 = 8;
-            var res = ds.ElephCanMove(x1,x2,y1,y2);
-            Assert.AreEqual(true, res);
+            double wait = 8;
+            var res = ds.ElephCanMove(x1, x2, y1, y2);
+            Assert.AreEqual(wait, res);
             if (Math.Abs(x1 - x2) == Math.Abs(y1 - y2))
             {
                 Console.WriteLine("True");
@@ -27,5 +28,6 @@ namespace Tyuiu.MedvedevKA.Sprint1.Task3.V19.Test
                 Console.WriteLine("False");
             }
         }
+
     }
 }
